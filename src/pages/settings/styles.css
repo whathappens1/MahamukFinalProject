@@ -1,0 +1,32 @@
+form .account.v2 {
+  margin-top: -11px;
+  margin-bottom: 20px;
+}
+
+.material-symbols-outlined {
+  font-size: 23px;
+}
+
+.account.v3 {
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form .account.bold{
+  font-weight: 600 !important;
+}
+
+form input {
+  padding: 9px 4px;
+  border-radius: 5px;
+  border: 2px solid rgb(140, 149, 166);
+  font-family: 'Changa', sans-serif;
+  margin-bottom: 18px;
+  font-size: 16px;
+  outline: none;
+  text-align: start;
+}

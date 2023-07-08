@@ -1,0 +1,475 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+  border-radius: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* The track NOT covered by the handle.
+::-webkit-scrollbar-track-piece {
+    background: #000; 
+}
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: #999;
+}
+
+/* Resizer */
+::-webkit-resizer {
+  background: #000;
+}
+
+/* everthing */
+
+body {
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+.db {
+  display: block !important;
+}
+
+.dn {
+  display: none !important;
+}
+
+/* other classes */
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+/* hello section */
+
+
+
+.HelloH1 {
+  font-family: 'Cairo', sans-serif;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 90px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+.Phello, .helloSec a {
+  font-family: 'Cairo', sans-serif;
+  color: #fff;
+  font-size: 60px;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.Phello2 {
+  font-family: 'Cairo', sans-serif;
+  color: #fff;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  transition: all 0.3s;
+  display: none;
+}
+
+.helloSec {
+  text-align: center;
+  position: relative;
+  top: 170px;
+}
+
+.linksWithoutSignIn .Phello a{
+  text-decoration: underline !important;
+}
+
+/* resposive screens @media */
+@media (min-width: 0) and (max-width: 1100px) {
+  .Phello2 {
+    display: block;
+  }
+
+  .Phello {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .HelloH1 {
+    font-size: 60px;
+  }
+
+  .Phello {
+    font-size: 33px;
+  }
+
+  .Phello2 {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .HelloH1 {
+    font-size: 40px;
+  }
+
+  .Phello {
+    font-size: 23px;
+  }
+
+  .Phello2 {
+    font-size: 23px;
+  }
+}
+
+/* loading old */
+
+/* @keyframes loading {
+  0% {
+    transform: rotate(0);
+    transition: all 0.6s;
+    opacity: 0.1;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  90% {
+    transform: rotate(360deg);
+    transition: all 0.6s;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transition: all 0.6s;
+    opacity: 0.1;
+  }
+} */
+
+/* #loadingPhoto {
+  width: 23%;
+  text-align: center;
+  display: block;
+  margin: 20vw auto;
+  padding: 35% 0; 
+  animation: loading 1.7s linear infinite;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.6s;
+}  */
+
+/* main */
+
+#main2 {
+  text-align: center;
+  display: block;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* other classes */
+
+.mt9px {
+  margin-top: 9px;
+}
+
+.darkMode {
+  background: #eee !important;
+}
+
+/* signin & signup forms && settings page */
+
+.formMain {
+  text-align: center;
+  margin-top: 90px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.4s;
+}
+
+form button,
+.signMethodBtn {
+  padding: 9px 4px;
+
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  transition: all 0.4s;
+  font-family: 'Cairo', sans-serif;
+  cursor: pointer;
+  transition: all 0.4s;
+  outline: none;
+}
+
+form button:disabled,
+.signMethodBtn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+form button:disabled:hover,
+.signMethodBtn:disabled:hover {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+form button:hover,
+.signMethodBtn:hover {
+  opacity: 0.9;
+}
+
+form input {
+  padding: 9px 4px;
+  border-radius: 5px;
+  border: 2px solid rgb(140, 149, 166);
+  font-family: 'Changa', sans-serif;
+  margin-bottom: 18px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+}
+
+form .account {
+  font-size: 16px;
+  margin-top: 28px;
+  margin-bottom: -55px;
+  transition: all 0.4s;
+  color: #fff;
+  font-family: 'Changa', sans-serif;
+  direction: ltr;
+}
+
+form .account.bold{
+  font-weight: 600 !important;
+}
+
+.Forget {
+  margin-bottom: 15px !important;
+  margin-top: -5px !important;
+  display: flex;
+  justify-content: flex-start;
+  direction: rtl;
+}
+
+.Forget a {
+  margin-right: 5px !important;
+}
+
+.errorMsg {
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: -11px !important;
+  font-family: 'Changa', sans-serif;
+  color: #fff;
+  transition: all 0.4s;
+  font-weight: 600;
+}
+
+form .account a {
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.4s;
+  font-family: 'Changa', sans-serif;
+}
+
+.SignH1 {
+  font-family: 'Cairo', sans-serif;
+  color: #fff;
+  font-size: 55px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+/* settings page */
+
+form .settingsDiv {
+  border-radius: 5px;
+  font-family: 'Cairo', sans-serif;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.4s;
+  text-align: start;
+}
+
+form .settingsDiv h2{
+  display: flex;
+}
+
+form .settingsDiv time {
+  margin-right: 5px !important;
+}
+
+form .selectorsP {
+  font-family: 'Cairo', sans-serif;
+  text-align: start;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 8px 15px 8px;
+}
+
+form .Selectors {
+  font-size: 14px;
+  padding: 8px 10px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #000;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: 'Tajawal', sans-serif;
+  transition: all 0.4s;
+  text-align: start;
+  cursor: pointer;
+}
+
+/* resposive screens @media */
+@media (min-width: 850px) and (max-width: 1080px) {
+  .SignH1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 1180px) {
+  form {
+    width: 40%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 1040px) {
+  form .settingsDiv h2 {
+    display: block;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
+  .SignH1 {
+    font-size: 40px;
+  }
+
+  form {
+    width: 60%;
+    transition: all 0.4s;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 500px) {
+  .SignH1 {
+    font-size: 33px;
+  }
+
+  form {
+    width: 58%;
+  }
+
+  form .account,
+  form button,
+  form input,
+  form .account a,
+  form .settingsDiv {
+    font-size: 12px;
+  }
+
+  /* .settingsh1 {
+    margin-top: 15px;
+  } */
+}
+
+@media (min-width: 0) and (max-width: 380px) {
+  .SignH1 {
+    font-size: 28px;
+  }
+
+  /* .settingsh1 {
+    margin-top: 15px;
+  } */
+
+  form {
+    width: 70%;
+  }
+
+  form .account,
+  form button,
+  form input,
+  form .account a,
+  form .settingsDiv {
+    font-size: 12px;
+  }
+}
+
+.SettingsLinksH2 {
+  text-decoration: underline !important;
+  color: #91caee;
+  font-weight: 500;
+  margin-top: -19px;
+}
+
+.SettingsLinksH2:hover {
+  color: #73bcea;
+  cursor: pointer;
+}
+
+/* status page styles */
+.icon-cross {
+  font-size: 20px !important;
+}

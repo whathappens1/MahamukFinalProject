@@ -1,0 +1,279 @@
+.App.light {
+  background-color: #eee;
+  color: #242424;
+}
+
+.App.light .Phello2 {
+  color: #242424;
+}
+
+.App.light .Phello {
+  color: #242424;
+}
+
+.App.light .HelloH1 {
+  color: #242424;
+}
+
+.App.light .GreatLanguagesText {
+  color: #242424;
+}
+
+.App.light .MyProjectsText {
+  color: #242424;
+}
+
+.App.light .footer-basic ul a {
+  color: #242424;
+}
+
+.App.light .footer-basic .copyright {
+  color: #242424;
+}
+
+.App.light .ProjectBox {
+  background-color: #eee;
+  border: 0px solid #000;
+}
+
+.App.light .ProjectBox .texts {
+  border: 3px solid #000;
+}
+
+.App.light .ProjectBox img {
+  border: 3px solid #000;
+}
+
+.App.light .details-texts h3 {
+  color: #000;
+}
+
+.App.light .langsUsedP {
+  color: #000;
+}
+
+.App.light .LangsP {
+  color: #000;
+}
+
+.App.light .hrefLink {
+  color: #2f2f2f;
+}
+
+.App.light .hrefLink:hover {
+  color: #000;
+}
+
+.App.light .hrefLink:focus {
+  color: #000;
+}
+
+.App.light .toggleThemeBtn {
+  background-color: transparent;
+  border: 0 solid transparent;
+  color: #fff;
+}
+
+.App.light .toggleThemeBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.App.light .headerDiv .transparentHeader {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.App.light .headerDiv header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.933), transparent);
+  background-color: transparent;
+}
+
+.App.dark form button {
+  background: #fff;
+  color: #000;
+}
+
+.App.light form button {
+  background: #000;
+  color: #fff;
+}
+
+.App.dark form a,
+.App.dark .errorMsg,
+.App.dark form .settingsDiv,
+.App.dark form .account a,
+.App.dark form .account,
+.App.dark #heart
+ {
+  color: #fff;
+}
+
+.App.light form a,
+.App.light .errorMsg,
+.App.light form .settingsDiv,
+.App.light form .account a,
+.App.light form .account ,
+.App.light .crossIcon
+ {
+  color: #000;
+}
+
+.App.light .SignH1 {
+  color: #000;
+}
+
+.App.light .modelPanel {
+  background: #eee;
+  border: 2px solid #111;
+  box-shadow: 13px 13px yellow;
+  transition: all 0.6s;
+}
+
+.App.dark .modelPanel {
+  background: #000;
+  border: 2px solid #eee;
+  box-shadow: 13px 13px royalblue;
+  transition: all 0.6s;
+}
+
+.App.dark .loading{
+  border-top: 5px solid  #fff;
+  border-right: 5px solid  #fff;
+}
+
+.App.light .loading{
+  border-top: 5px solid  #000;
+  border-right: 5px solid  #000;
+}
+
+.App.light .home .parent_of_buttons select{
+  background-color: #000;
+  color: #fff;
+}
+
+.App.light .home .all_tasks .one_task p a{
+  color: #000;
+}
+
+.App.light .home .all_tasks .one_task h2,
+.App.light .home .all_tasks .one_task p,
+.App.light .home .all_tasks .one_task ul li {
+  color: #000;
+  transition: all 0.4s;
+}
+
+.App.light .home .all_tasks .one_task {
+  border: 2px solid #111;
+  transition: all 0.3s;
+}
+
+.App.light .home .all_tasks .one_task:hover {
+  border-left: 15px solid #111;
+  transition: all 0.3s;
+}
+
+.App.light .sub_tasks .top_ele_parent label,.App.light .sub_tasks .top_ele_parent p {
+  color: #000;
+}
+
+.App.dark .sub_tasks .top_ele_parent label,.App.dark .sub_tasks .top_ele_parent p {
+  color: #fff;
+}
+
+.App.light .sub_tasks .top_ele_parent #checkbox{
+  height: 18px;
+  width: 18px;
+  accent-color: #000;
+}
+
+.App.light .edit_task .title_parent .titleInput,.App.light  .edit_task .icon-edit {
+  color: #000;
+}
+
+.App.light .edit_task .title_parent .titleInput:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.App.light .sub_tasks .card_task {
+  color: #101;
+  background-color: rgb(245, 245, 245);
+}
+
+.App.light .sub_tasks .card_task:hover {
+  background-color: #fff;
+  font-size: 18px;
+  padding: 0 13px;
+  border-left: 16px solid #101;
+  transition: all 0.4s;
+}
+
+.App.light .sub_tasks .card_task .icon-cross{
+  color: #000;
+  transition: all 0.4s;
+}
+
+.App.light .bottom_buttons button {
+  color: #fff;
+  background-color: #000;
+  transition: all 0.6s;
+}
+
+.App.light .bottom_buttons button:hover {
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.App.dark .bottom_buttons button {
+  color: #000;
+  background-color: #fff;
+  transition: all 0.6s;
+}
+
+.App.dark .bottom_buttons button:hover {
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.App.dark .home .small {
+  border-top: 2px solid #000 !important;
+  border-right: 2px solid #000 !important;
+}
+
+.App.light .home .small {
+  border-top: 2px solid #fff !important;
+  border-right: 2px solid #fff !important;
+}
+
+.App.dark .home section main .notFoundText {
+  color: #fff;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  margin-top: 55px;
+  font-size: 40px;
+  transition: all 0.4s;
+}
+
+.App.light .home section main .notFoundText {
+  color: #000;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  margin-top: 55px;
+  font-size: 40px;
+  transition: all 0.4s;
+}
+
+.App.dark form .Selectors {
+  background-color: #fff;
+  color: #000;
+}
+
+.App.light form .Selectors {
+  background-color: #000;
+  color: #fff;
+}
+

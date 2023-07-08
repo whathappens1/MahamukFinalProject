@@ -1,0 +1,402 @@
+/* header */
+
+.headerDiv .HeaderImg {
+  width: 140px;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.headerDiv .transparentHeader {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: fixed !important;
+}
+
+.headerDiv header {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10%;
+  width: 100%;
+  z-index: 60 !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.907), transparent);
+  padding-bottom: 0.5rem;
+  transition: all 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* normal navbar */
+.headerDiv .LinksUl {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 4px;
+  right: 90px;
+  text-align: center;
+  transition: all 0.6s;
+}
+
+.headerDiv .LinksUl .linkLi {
+  list-style: none;
+  color: #fff;
+  opacity: 0.7;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 16px;
+  transition: all 0.6s;
+  text-decoration: none;
+}
+
+.headerDiv .LinksUl .linkLi:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.headerDiv .linkLi.active {
+  opacity: 1 !important;
+}
+
+/* mobile navbar */
+.headerDiv .LinksUlMobile {
+  display: block;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  transition: all 0.6s;
+  border-radius: 3px;
+  border-top: 8px solid royalblue;
+}
+
+.headerDiv .navbarHeaderMobile {
+  position: absolute;
+  top: 55px;
+  right: 18px;
+  width: 38%;
+  padding-bottom: 90px;
+}
+
+.headerDiv .LinksUlMobile .linkLiMobile {
+  list-style: none;
+  color: #000;
+  opacity: 0.7;
+  z-index: 55;
+  font-family: "Changa", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all 0.6s;
+  text-decoration: none;
+  direction: rtl;
+}
+
+.headerDiv .LinksUlMobile .linkLiMobile li {
+  margin-right: 15px;
+}
+
+.headerDiv .LinksUlMobile .linkLiMobile:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.headerDiv .LinksUlMobile .linkLiMobile.active {
+  opacity: 1;
+}
+
+.headerDiv .navbarHeaderMobile {
+  transition: all 0.3s;
+}
+
+/* langs navbar */
+/* .headerDiv .LinksUlLangs {
+  display: block;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  transition: all 0.6s;
+  border-radius: 3px;
+  z-index: 55;
+  border-top: 8px solid royalblue;
+}
+
+.headerDiv .navbarHeaderLangs {
+  position: absolute;
+  top: 55px;
+  right: 250px;
+  width: 38%;
+  padding-bottom: 90px;
+}
+
+.headerDiv .LinksUlLangs .linkLiLangs {
+  list-style: none;
+  color: #000;
+  opacity: 0.7;
+  z-index: 55;
+  font-family: 'Changa', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all 0.6s;
+  text-decoration: none;
+  direction: rtl;
+}
+
+.headerDiv .LinksUlLangs .linkLiLangs li {
+  margin-right: 15px;
+}
+
+
+.headerDiv .LinksUlLangs .linkLiLangs:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.headerDiv .LinksUlLangs .linkLiLangs.active {
+  opacity: 1;
+}
+
+.headerDiv .navbarHeaderLangs {
+  transition: all 0.3s;
+} */
+
+
+/* other items in navbar */
+
+.headerDiv .humburger {
+  color: #fff;
+  opacity: 0.7;
+  transition: all 0.6s;
+  cursor: pointer;
+  font-size: 45px;
+  font-weight: 400;
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  display: block;
+  text-decoration: none;
+}
+
+.headerDiv .humburger:hover {
+  opacity: 1;
+}
+
+.headerDiv .humburger.active{
+  opacity: 1;
+}
+
+.toggleThemeBtn {
+  background-color: transparent;
+  border: 0 solid transparent;
+  color: #fff;
+  font-family: 'Changa', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 30px;
+  position: absolute;
+  top: 10px;
+  left: 270px;
+  transition: all 0.5s;
+}
+
+.toggleThemeBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.headerDiv .profileImg {
+  color: #fff;
+  opacity: 0.7;
+  transition: all 0.6s;
+  cursor: pointer;
+  font-size: 45px;
+  font-weight: 400;
+  position: absolute;
+  top: 15px;
+  right: 78px;
+  display: none;
+  text-decoration-line: none;
+}
+
+.headerDiv .profileImg:hover {
+  opacity: 1;
+}
+
+.headerDiv .profileImg.active {
+  opacity: 1;
+}
+
+/* resposive screens @media */
+
+@media (min-width: 850px) and (max-width: 1070px) {
+  .headerDiv .LinksUl {
+    position: absolute;
+    top: 2.8px !important;
+    right: 70px;
+  }
+
+  .headerDiv .LinksUl .linkLi {
+    font-size: 19px;
+  }
+
+  /* .headerDiv .HeaderImg {
+    width: 205px;
+    position: absolute;
+    top: 1.3px;
+  } */
+
+  .headerDiv .profileImg {
+    font-size: 40px;
+    right: 70px;
+  }
+
+  .headerDiv .humburger {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 850px) {
+  .headerDiv .LinksUl {
+    display: none;
+  }
+
+  .headerDiv .profileImg {
+    display: block;
+  }
+/* 
+  .headerDiv .HeaderImg {
+    width: 205px;
+    position: absolute;
+    top: 2.3px;
+  } */
+
+  .headerDiv .humburger {
+    display: block;
+  }
+
+  .headerDiv .profileImg {
+    font-size: 40px;
+    right: 70px;
+  }
+
+  .headerDiv .humburger {
+    font-size: 40px;
+  }
+}
+
+
+@media (min-width: 640px) and (max-width: 729px) {
+  /* .headerDiv .HeaderImg {
+    width: 205px;
+    position: absolute;
+    top: 2.3px;
+  } */
+
+  .headerDiv .humburger {
+    display: block;
+  }
+
+  .headerDiv .profileImg {
+    font-size: 40px;
+    right: 70px;
+  }
+
+  .headerDiv .humburger {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .headerDiv .humburger {
+    display: block;
+  }
+
+  .headerDiv .profileImg {
+    font-size: 40px;
+    right: 70px;
+  }
+
+  .headerDiv .humburger {
+    font-size: 40px;
+  }
+
+  .headerDiv .LinksUlMobile .linkLiMobile {
+    font-size: 19px;
+  }
+
+  .headerDiv .LinksUlLangs .linkLiLangs {
+    font-size: 19px;
+  }
+
+  .headerDiv .navbarHeaderMobile {
+    width: 58%;
+  }
+
+  .headerDiv .navbarHeaderLangs {
+    width: 58%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 360px) {
+  /* .headerDiv .HeaderImg {
+    width: 205px;
+    position: absolute;
+    top: 2.3px;
+  } */
+
+  .headerDiv header {
+    height: 9% !important;
+  }
+
+  .headerDiv .humburger {
+    display: block;
+  }
+
+  .headerDiv .profileImg {
+    font-size: 40px;
+    right: 70px;
+  }
+
+  .headerDiv .humburger {
+    font-size: 40px;
+  }
+
+  .headerDiv .LinksUlMobile .linkLiMobile {
+    font-size: 16px;
+  }
+
+  .headerDiv .navbarHeaderMobile {
+    width: 58%;
+  }
+  
+  .headerDiv .LinksUlLangs .linkLiLangs {
+    font-size: 16px;
+  }
+
+  .headerDiv .navbarHeaderLangs {
+    width: 58%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 850px) {
+  .toggleThemeBtn {
+    display: none !important;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1070px) {
+  .toggleThemeBtn {
+    font-size: 21px;
+    top: 12px;
+    left: 240px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 850px) {
+  .toggleThemeBtn {
+    font-size: 20px;
+    top: 12px;
+    left: 240px;
+  }
+}

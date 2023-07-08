@@ -1,0 +1,93 @@
+.Perant_ModelPanel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 55;
+}
+
+.modelPanel {
+  background: #000;
+  border: 2px solid #eee;
+  box-shadow: 13px 13px royalblue;
+  width: 500px;
+  height: 391px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110px;
+  transition: all 0.9s;
+  opacity: 1 !important;
+  animation: modalAnimation 0.4s;
+}
+
+@keyframes modalAnimation {
+  0% {
+    transform: translateX(-200VH)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.modelPanel button {
+  border: 2px solid rgb(140, 149, 166);
+  width: 60%;
+}
+
+.modelPanel input {
+  width: 60%;
+}
+
+.pcoyemail p {
+  font-size: 20px;
+}
+
+.crossIcon {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 45px;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  transition: all 0.6s;
+}
+
+.crossIcon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* resposive screens @media */
+@media (min-width: 700px) and (max-width: 1080px) {
+  .modelPanel {
+    width: 450px;
+    height: 341px;
+  }
+}
+
+@media (min-width: 465px) and (max-width: 700px) {
+  .modelPanel {
+    width: 400px;
+    height: 291px;
+    top: 120px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 465px) {
+  .modelPanel {
+    top: 110px;
+    width: 330px;
+    height: 241px;
+  }
+}
